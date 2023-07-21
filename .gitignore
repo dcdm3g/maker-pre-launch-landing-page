@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+
+# Nextjs
+.next
+
+# Typescript
+next-env.d.ts
