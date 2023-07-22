@@ -1,5 +1,7 @@
 # Maker Pre-launch Landing Page
 
+![Development status badge.](https://img.shields.io/badge/STATUS-DEVELOPMENT-3EE9E5?labelColor=080C20)
+
 This is my solution to the ["Maker pre-launch landing page" challenge by Frontend Mentor](https://www.frontendmentor.io/challenges/maker-prelaunch-landing-page-WVZIJtKLd). Therefore, Maker is not a real company or organization.
 
 ## Running The Project 🏃
