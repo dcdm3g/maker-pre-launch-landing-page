@@ -12,15 +12,15 @@ export function Possibility({
   description,
 }: PossibilityProps) {
   return (
-    <div className="flex flex-col items-center gap-8 tablet:flex-row tablet:gap-14 desktop:flex-col desktop:items-start desktop:gap-12">
-      <div className="flex h-32 w-32 items-center justify-center rounded-[2.8125rem] bg-midnight-navy desktop:h-40 desktop:w-40">
+    <div className="flex flex-col items-center gap-8 tablet:max-w-lg tablet:flex-row tablet:gap-14 desktop:max-w-none desktop:flex-col desktop:items-start desktop:gap-12">
+      <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center rounded-[2.8125rem] bg-midnight-navy desktop:h-40 desktop:w-40">
         {illustration}
       </div>
 
       <div className="flex flex-col items-center gap-3 tablet:items-start desktop:gap-6">
-        <h3 className="text-center text-lg text-pure-white tablet:text-start">
+        <h2 className="text-center text-lg text-pure-white tablet:text-start">
           {title}
-        </h3>
+        </h2>
 
         <p className="text-center text-base text-slate-gray tablet:text-start">
           {description}
