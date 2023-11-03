@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Possibilities } from '@/components/Possibilities'
+import { PricingPlans } from '@/components/PricingPlans'
 
 export default function Page() {
   return (
@@ -11,6 +12,8 @@ export default function Page() {
         <Hero />
 
         <Possibilities />
+
+        <PricingPlans />
       </main>
     </>
   )
