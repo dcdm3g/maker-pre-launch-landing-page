@@ -33,5 +33,7 @@ Everything is ready! The application will start at http://localhost:3000 by defa
 - [Next.js](https://nextjs.org)
 - [Tailwindcss](https://tailwindcss.com)
 - [Typescript](https://typescriptlang.org)
+- [React Hook Form](https://react-hook-form.com)
+- [Zod](https://zod.dev)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)

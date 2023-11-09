@@ -25,7 +25,7 @@ export function GetNotifiedForm() {
 
   return (
     <form
-      className="flex w-full flex-col gap-6 tablet:flex-row tablet:gap-4 desktop:mx-32 desktop:w-auto desktop:min-w-[29.75rem]"
+      className="flex w-full flex-col gap-6 tablet:flex-row tablet:gap-4 desktop:w-[calc(100%_-_16rem)] desktop:min-w-[29.75rem]"
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       onSubmit={handleSubmit(() => {})}
     >
