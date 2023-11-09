@@ -9,9 +9,12 @@
   },
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "next": "^13.4.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",

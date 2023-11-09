@@ -13,6 +13,7 @@ module.exports = {
       'pure-white': '#FFFFFF',
       'deep-night': '#080C20',
       'raspberry-pink': '#FF2965',
+      transparent: 'transparent',
     },
     fontSize: {
       base: [
@@ -50,6 +51,9 @@ module.exports = {
           fontWeight: '800',
         },
       ],
+    },
+    backgroundImage: {
+      'footer-squiggle': "url('/bg-footer-squiggle.svg')",
     },
     extend: {},
   },
