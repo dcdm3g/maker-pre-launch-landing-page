@@ -12,10 +12,10 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-aqua-splash rounded-xl
+    @apply bg-aqua-splash/40 rounded-xl
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-opacity-60
+    @apply bg-aqua-splash/30
   }
 }
