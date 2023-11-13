@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -17,11 +18,18 @@ type GetNotifiedFormData = z.infer<typeof getNotifiedFormSchema>
 export function GetNotifiedForm() {
   const {
     register,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
     handleSubmit,
+    reset,
   } = useForm<GetNotifiedFormData>({
     resolver: zodResolver(getNotifiedFormSchema),
   })
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({ email: '' }, { keepIsSubmitted: false })
+    }
+  }, [isSubmitSuccessful, reset])
 
   return (
     <form
