@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
+import { motion } from '@/lib/framer-motion'
 
 const getNotifiedFormSchema = z.object({
   email: z
@@ -37,7 +38,16 @@ export function GetNotifiedForm() {
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       onSubmit={handleSubmit(() => {})}
     >
-      <div className="flex flex-1 flex-col gap-1">
+      <motion.div
+        className="flex flex-1 flex-col gap-1"
+        initial={{ x: -25, opacity: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          transition: { type: 'spring', bounce: 0.4 },
+        }}
+        viewport={{ once: true }}
+      >
         <input
           className={`rounded-3xl border-2 border-midnight-navy bg-midnight-navy px-4 py-2 text-base font-extrabold text-pure-white placeholder-opacity-40 transition-colors focus:border-aqua-splash focus:outline-none ${
             errors.email ? 'focus:border-raspberry-pink' : ''
@@ -52,14 +62,21 @@ export function GetNotifiedForm() {
             {errors.email.message}
           </p>
         )}
-      </div>
+      </motion.div>
 
-      <button
+      <motion.button
         className="h-min min-w-max rounded-3xl border-2 border-aqua-splash bg-aqua-splash px-10 py-2 text-center text-base font-extrabold text-midnight-navy transition-colors hover:bg-transparent hover:text-pure-white focus:bg-transparent focus:text-pure-white focus:outline-none tablet:px-4"
         type="submit"
+        initial={{ x: 25, opacity: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          transition: { type: 'spring', bounce: 0.4 },
+        }}
+        viewport={{ once: true }}
       >
         Get notified
-      </button>
+      </motion.button>
     </form>
   )
 }

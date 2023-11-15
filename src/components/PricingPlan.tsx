@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { motion } from '@/lib/framer-motion'
 import { CheckIcon } from './CheckIcon'
 import freePlanIcon from 'public/icon-free.svg'
 import paidPlanIcon from 'public/icon-paid.svg'
@@ -39,12 +40,19 @@ export function PricingPlan({ type }: PricingPlanProps) {
   const { icon, title, description, benefits } = planInfo[type]
 
   return (
-    <div
+    <motion.div
       className={`relative flex flex-1 flex-col gap-5 rounded-lg pb-8 pl-8 pr-7 tablet:px-[2.38rem] ${
         isTypeFree
           ? 'bg-midnight-navy pt-12 tablet:pb-12'
           : 'bg-aqua-splash pt-16 tablet:pb-14'
       }`}
+      initial={{ scale: 0.8, opacity: 0 }}
+      whileInView={{
+        scale: 1,
+        opacity: 1,
+        transition: { type: 'spring', bounce: 0.4 },
+      }}
+      viewport={{ once: true }}
     >
       <Image
         className={`absolute ${
@@ -101,6 +109,6 @@ export function PricingPlan({ type }: PricingPlanProps) {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   )
 }

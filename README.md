@@ -35,5 +35,6 @@ Everything is ready! The application will start at http://localhost:3000 by defa
 - [Typescript](https://typescriptlang.org)
 - [React Hook Form](https://react-hook-form.com)
 - [Zod](https://zod.dev)
+- [Framer Motion](https://framer.com/motion)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
