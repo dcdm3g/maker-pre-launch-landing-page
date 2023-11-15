@@ -41,11 +41,7 @@ export function GetNotifiedForm() {
       <motion.div
         className="flex flex-1 flex-col gap-1"
         initial={{ x: -25, opacity: 0 }}
-        whileInView={{
-          x: 0,
-          opacity: 1,
-          transition: { type: 'spring', bounce: 0.4 },
-        }}
+        whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
         <input
@@ -68,11 +64,7 @@ export function GetNotifiedForm() {
         className="h-min min-w-max rounded-3xl border-2 border-aqua-splash bg-aqua-splash px-10 py-2 text-center text-base font-extrabold text-midnight-navy transition-colors hover:bg-transparent hover:text-pure-white focus:bg-transparent focus:text-pure-white focus:outline-none tablet:px-4"
         type="submit"
         initial={{ x: 25, opacity: 0 }}
-        whileInView={{
-          x: 0,
-          opacity: 1,
-          transition: { type: 'spring', bounce: 0.4 },
-        }}
+        whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
         Get notified

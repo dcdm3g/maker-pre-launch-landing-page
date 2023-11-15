@@ -47,11 +47,7 @@ export function PricingPlan({ type }: PricingPlanProps) {
           : 'bg-aqua-splash pt-16 tablet:pb-14'
       }`}
       initial={{ scale: 0.8, opacity: 0 }}
-      whileInView={{
-        scale: 1,
-        opacity: 1,
-        transition: { type: 'spring', bounce: 0.4 },
-      }}
+      whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
     >
       <Image
