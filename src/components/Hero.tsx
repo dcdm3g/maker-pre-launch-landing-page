@@ -8,12 +8,7 @@ import scrollIcon from 'public/icon-scroll.svg'
 export function Hero() {
   return (
     <section className="relative flex flex-col gap-12">
-      <motion.div
-        className="flex items-center justify-center overflow-x-hidden tablet:gap-11 desktop:gap-24"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-      >
+      <div className="flex items-center justify-center overflow-x-hidden tablet:gap-11 desktop:gap-24">
         <Image
           className="w-52 tablet:w-80 desktop:w-auto"
           src={heroLeftIllustration}
@@ -32,12 +27,12 @@ export function Hero() {
           src={heroRightIllustration}
           alt=""
         />
-      </motion.div>
+      </div>
 
       <motion.div
         className="flex flex-col items-center gap-6 px-6 tablet:absolute tablet:left-1/2 tablet:top-1/2 tablet:w-max tablet:max-w-md tablet:-translate-x-1/2 tablet:-translate-y-1/2 tablet:px-0 desktop:max-w-[33.75rem]"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
         <h1 className="mx-10 text-center text-xl/10 font-extrabold text-pure-white tablet:mx-8 desktop:mx-6 desktop:text-3xl">
