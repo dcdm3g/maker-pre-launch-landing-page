@@ -7,7 +7,10 @@ import { Footer } from '@/components/Footer'
 
 export default function Page() {
   return (
-    <MotionConfig transition={{ type: 'spring', bounce: 0.4 }}>
+    <MotionConfig
+      transition={{ type: 'spring', bounce: 0.4 }}
+      reducedMotion="user"
+    >
       <Header />
 
       <main className="flex flex-col gap-36 tablet:gap-28 desktop:gap-52">
