@@ -50,6 +50,7 @@ export function GetNotifiedForm() {
           }`}
           type="email"
           placeholder="Email address"
+          autoComplete="email"
           {...register('email')}
         />
 
