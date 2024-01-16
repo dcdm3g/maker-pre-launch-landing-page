@@ -19,11 +19,13 @@ export function Hero() {
           side hustle, we’ve got you covered.
         </p>
 
-        <Image
-          className="mt-4 animate-bounce desktop:mt-12"
-          src={scrollIcon}
-          alt="Scroll down for more information."
-        />
+        <div className="relative mt-4 aspect-[13/21] w-[1.625rem] animate-bounce desktop:mt-12">
+          <Image
+            src={scrollIcon}
+            alt="Scroll down for more information."
+            fill
+          />
+        </div>
       </div>
     </section>
   )

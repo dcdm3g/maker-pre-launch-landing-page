@@ -55,7 +55,11 @@ module.exports = {
     backgroundImage: {
       'footer-squiggle': "url('/bg-footer-squiggle.svg')",
     },
-    extend: {},
+    extend: {
+      width: {
+        scrollbar: '12px',
+      },
+    },
   },
   plugins: [],
 }

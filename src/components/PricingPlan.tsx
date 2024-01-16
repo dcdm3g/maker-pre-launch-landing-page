@@ -50,15 +50,19 @@ export function PricingPlan({ type }: PricingPlanProps) {
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
     >
-      <Image
+      <div
         className={`absolute ${
           isTypeFree
             ? '-top-6 left-8 tablet:left-[2.38rem]'
             : '-top-8 left-[2.31rem]'
         }`}
-        src={icon}
-        alt=""
-      />
+      >
+        <div
+          className={`relative ${isTypeFree ? 'aspect-square w-[2.875rem]' : 'aspect-[51/65] w-[3.1875rem]'}`}
+        >
+          <Image src={icon} alt="" fill />
+        </div>
+      </div>
 
       <h3
         className={`text-lg ${

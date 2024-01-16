@@ -19,10 +19,10 @@ const manrope = Manrope({
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body
-        className={`${manrope.className} flex flex-col gap-16 bg-deep-night pb-40 pt-10 tablet:gap-20 tablet:pb-28 tablet:pt-12 desktop:gap-24 desktop:pt-20`}
-      >
-        {children}
+      <body className={`${manrope.className} bg-deep-night`}>
+        <div className="mx-auto flex flex-col gap-16 pb-40 pt-10 tablet:gap-20 tablet:pb-28 tablet:pt-12 desktop:max-w-[97.0625rem] desktop:gap-24 desktop:pt-20">
+          {children}
+        </div>
       </body>
     </html>
   )

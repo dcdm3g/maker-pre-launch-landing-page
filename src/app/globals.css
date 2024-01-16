@@ -4,7 +4,7 @@
 
 @layer utilities {
   ::-webkit-scrollbar {
-    @apply w-3
+    @apply w-scrollbar
   }
 
   ::-webkit-scrollbar-track {
