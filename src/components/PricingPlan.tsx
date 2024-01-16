@@ -58,7 +58,11 @@ export function PricingPlan({ type }: PricingPlanProps) {
         }`}
       >
         <div
-          className={`relative ${isTypeFree ? 'aspect-square w-[2.875rem]' : 'aspect-[51/65] w-[3.1875rem]'}`}
+          className={`relative ${
+            isTypeFree
+              ? 'aspect-square w-[2.875rem]'
+              : 'aspect-[51/65] w-[3.1875rem]'
+          }`}
         >
           <Image src={icon} alt="" fill />
         </div>
