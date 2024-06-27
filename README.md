@@ -11,7 +11,7 @@ To run the project, you need to have Node.js and Git installed on your machine. 
 First, navigate to the folder where you want to keep the project folder. Then clone this repository:
 
 ```sh
-git clone https://github.com/davi-costa-de-melo/maker-pre-launch-landing-page
+git clone https://github.com/dcdm3g/maker-pre-launch-landing-page
 ```
 
 Now that you have the project folder, navigate to it and install the dependencies:
