@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { HeroIllustrations } from './HeroIllustrations'
+import { HeroIllustrations } from './hero-illustrations'
 import scrollIcon from 'public/icon-scroll.svg'
 
 export function Hero() {

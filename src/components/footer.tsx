@@ -1,4 +1,4 @@
-import { GetNotifiedForm } from './GetNotifiedForm'
+import { GetNotifiedForm } from './get-notified-form'
 
 export function Footer() {
   return (

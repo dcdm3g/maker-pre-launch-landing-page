@@ -1,4 +1,4 @@
-import { PricingPlan } from './PricingPlan'
+import { PricingPlan } from './pricing-plan'
 
 export function PricingPlans() {
   return (

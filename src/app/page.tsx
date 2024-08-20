@@ -1,9 +1,9 @@
 import { MotionConfig } from '@/lib/framer-motion'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Possibilities } from '@/components/Possibilities'
-import { PricingPlans } from '@/components/PricingPlans'
-import { Footer } from '@/components/Footer'
+import { Header } from '@/components/header'
+import { Hero } from '@/components/hero'
+import { Possibilities } from '@/components/possibilities'
+import { PricingPlans } from '@/components/pricing-plans'
+import { Footer } from '@/components/footer'
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Possibility } from './Possibility'
+import { Possibility } from './possibility'
 import passionsIllustration from 'public/illustration-passions.svg'
 import financialFreedomIllustration from 'public/illustration-financial-freedom.svg'
 import lifestyleIllustration from 'public/illustration-lifestyle.svg'

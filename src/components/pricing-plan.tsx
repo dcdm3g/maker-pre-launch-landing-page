@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { motion } from '@/lib/framer-motion'
-import { CheckIcon } from './CheckIcon'
+import { CheckIcon } from './check-icon'
 import freePlanIcon from 'public/icon-free.svg'
 import paidPlanIcon from 'public/icon-paid.svg'
 
